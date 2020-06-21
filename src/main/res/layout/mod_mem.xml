@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="wrap_content"
+	android:fillViewport="true"
+	android:background="@drawable/image_drawable">
+
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:orientation="vertical">
+
+		<RelativeLayout
+			android:layout_height="match_parent"
+			android:layout_width="match_parent">
+
+			<RelativeLayout
+				android:layout_height="wrap_content"
+				android:id="@+id/get_memRelativeLayout"
+				android:layout_width="match_parent"
+				android:padding="15dp">
+
+				<RelativeLayout
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:layout_alignParentBottom="true"
+					android:id="@+id/getmemRelativeLayout1"
+					android:padding="4dp"
+					android:layout_marginTop="4dp">
+
+					<Button
+						style="@style/TextViewAppearance"
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:text="get"
+						android:background="@drawable/clear_button"
+						android:id="@+id/getMemButton"
+						android:layout_alignParentRight="true"/>
+
+					<EditText
+						android:layout_height="wrap_content"
+						android:inputType="number"
+						android:layout_width="wrap_content"
+						android:ems="3"
+						android:layout_toLeftOf="@id/getMemButton"
+						android:lines="1"
+						android:maxEms="3"
+						android:maxLength="4"
+						android:hint="&lt;2048"
+						android:id="@+id/byteCount"
+						android:layout_centerVertical="true"/>
+
+					<Button
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:text="Set"
+						android:id="@+id/setMemButton"
+						style="@style/TextViewAppearance"
+						android:background="@drawable/clear_button"/>
+
+					<RelativeLayout
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:id="@+id/modmemRelativeLayout1"
+						android:gravity="center_horizontal"
+						android:paddingTop="2dp"
+						android:layout_centerHorizontal="true"
+						android:layout_toRightOf="@id/setMemButton"
+						android:layout_centerVertical="true"
+						android:layout_toLeftOf="@id/byteCount">
+
+						<TextView
+							android:layout_height="wrap_content"
+							android:textAppearance="?android:attr/textAppearanceSmall"
+							android:layout_width="wrap_content"
+							android:text="HEX"
+							android:id="@+id/modmemTextView1"
+							android:layout_centerVertical="true"
+							android:textStyle="bold"/>
+
+						<Switch
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:layout_toRightOf="@id/modmemTextView1"
+							android:id="@+id/hexSwitch"/>
+
+						<TextView
+							android:layout_height="wrap_content"
+							android:textAppearance="?android:attr/textAppearanceSmall"
+							android:layout_width="wrap_content"
+							android:text="TEXT"
+							android:layout_toRightOf="@id/hexSwitch"
+							android:layout_centerVertical="true"
+							android:textStyle="bold"/>
+
+					</RelativeLayout>
+
+				</RelativeLayout>
+
+				<RelativeLayout
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:id="@+id/setmemRelativeLayout1">
+
+					<TextView
+						android:layout_height="wrap_content"
+						android:textAppearance="?android:attr/textAppearanceLarge"
+						android:layout_width="wrap_content"
+						android:text="NOT CONNECTED"
+						android:layout_centerHorizontal="true"
+						android:textStyle="bold"
+						android:id="@+id/statusText"
+						android:layout_marginTop="5dp"/>
+
+					<TextView
+						android:layout_height="wrap_content"
+						android:textAppearance="?android:attr/textAppearanceSmall"
+						android:layout_width="wrap_content"
+						android:text="No Process Attached"
+						android:layout_below="@id/statusText"
+						android:layout_centerHorizontal="true"
+						android:id="@+id/currentProcess"
+						android:textColor="#FFFFFF"
+						android:layout_marginBottom="5dp"/>
+
+					<ImageButton
+						style="?android:attr/buttonBarButtonStyle"
+						android:layout_height="54dp"
+						android:layout_width="45dp"
+						android:src="@drawable/refresh"
+						android:layout_alignParentRight="true"
+						android:id="@+id/updateProc"
+						android:background="@drawable/clear_button"
+						android:layout_margin="3dp"/>
+
+				</RelativeLayout>
+
+				<RelativeLayout
+					android:layout_height="48dp"
+					android:layout_width="match_parent"
+					android:layout_below="@id/setmemRelativeLayout1"
+					android:layout_marginTop="10dp"
+					android:id="@+id/setmemRelativeLayout2"
+					android:gravity="center_vertical|center_horizontal"
+					android:padding="4dp">
+
+					<RelativeLayout
+						android:layout_height="match_parent"
+						android:layout_width="wrap_content"
+						android:layout_alignParentRight="true"
+						android:id="@+id/modmemRelativeLayout2"
+						android:layout_alignParentTop="true"
+						android:gravity="center_vertical|center_horizontal">
+
+						<TextView
+							android:layout_height="match_parent"
+							android:textAppearance="?android:attr/textAppearanceSmall"
+							android:layout_width="wrap_content"
+							android:text="RTM"
+							android:id="@+id/modmemTextView2"
+							android:gravity="center_vertical|center_horizontal"/>
+
+						<Switch
+							android:layout_height="match_parent"
+							android:layout_width="wrap_content"
+							android:layout_toRightOf="@id/modmemTextView2"
+							android:id="@+id/addRTM"/>
+
+						<TextView
+							android:layout_height="match_parent"
+							android:textAppearance="?android:attr/textAppearanceSmall"
+							android:layout_width="wrap_content"
+							android:text="EBOOT"
+							android:layout_toRightOf="@id/addRTM"
+							android:gravity="center_vertical|center_horizontal"/>
+
+					</RelativeLayout>
+
+					<EditText
+						android:layout_height="45dp"
+						android:layout_width="wrap_content"
+						android:ems="10"
+						android:hint="0x OFFSET"
+						android:gravity="top|left"
+						android:id="@+id/modMemOffset"
+						android:textColorHint="#FFFEFE"
+						android:maxLength="9"
+						android:inputType="textWebEditText"
+						android:layout_toLeftOf="@id/modmemRelativeLayout2"
+						android:layout_alignParentLeft="true"
+						android:textColor="#FFFFFF"/>
+
+				</RelativeLayout>
+
+				<RelativeLayout
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:layout_below="@id/setmemRelativeLayout2"
+					android:layout_marginTop="10dp"
+					android:id="@+id/setmemRelativeLayout3"
+					android:layout_above="@id/getmemRelativeLayout1">
+
+					<RelativeLayout
+						android:layout_height="wrap_content"
+						android:layout_width="match_parent"
+						android:layout_above="@id/modmemRelativeLayout1"
+						android:layout_alignParentTop="true"
+						android:background="@drawable/black">
+
+						<EditText
+							android:layout_height="match_parent"
+							android:inputType="textMultiLine"
+							android:layout_width="match_parent"
+							android:ems="10"
+							android:layout_alignParentTop="true"
+							android:isScrollContainer="true"
+							android:gravity="top|left"
+							android:textColor="#FFFFFF"
+							android:textColorHint="#D2D2D2"
+							android:id="@+id/valueModMem"
+							android:padding="4dp"
+							android:textStyle="normal"
+							android:hint="Text : EXAMPLE\nHex : 4558414D504C45\n\nInstant conversion is in Beta Stage, It is recommended to use HEX over TEXT.\n\nText is provided to better understand HEX.\n\nGET MAX : 2048\nSET MAX : 2048"
+							android:background="#000000"
+							android:layout_margin="4dp"
+							android:maxLength="4096"/>
+
+					</RelativeLayout>
+
+				</RelativeLayout>
+
+			</RelativeLayout>
+
+		</RelativeLayout>
+
+	</LinearLayout>
+
+</ScrollView>
+

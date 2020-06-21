@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="@drawable/tall">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:padding="16dp"
+		android:orientation="vertical"
+		android:gravity="center_horizontal">
+
+		<RelativeLayout
+			android:layout_height="match_parent"
+			android:layout_width="match_parent">
+
+			<RelativeLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:id="@+id/setmemRelativeLayout1">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="wrap_content"
+					android:text="Connection"
+					android:layout_centerHorizontal="true"
+					android:textStyle="bold|italic"
+					android:id="@+id/connectTitle"/>
+
+			</RelativeLayout>
+
+			<RelativeLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:layout_marginTop="10dp"
+				android:id="@+id/setmemRelativeLayout2"
+				android:layout_centerInParent="true">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="wrap_content"
+					android:text="IP"
+					android:layout_centerHorizontal="true"
+					android:id="@+id/connectTextView1"
+					android:textColor="#FFFFFF"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="wrap_content"
+					android:text="ip"
+					android:layout_below="@id/connectTextView1"
+					android:layout_centerHorizontal="true"
+					android:id="@+id/ipInSet"
+					android:textColor="#C6C6C6"
+					android:textStyle="italic"
+					android:textSize="43sp"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:text="You can edit your PS3 local ip in settings."
+					android:layout_below="@id/ipInSet"
+					android:layout_centerHorizontal="true"
+					android:textColor="#B9B9B9"
+					android:layout_marginTop="30dp"
+					android:shadowColor="#000000"
+					android:shadowRadius="4.0"
+					android:elevation="4dp"
+					android:alpha="0.7"/>
+
+			</RelativeLayout>
+
+			<RelativeLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:layout_alignParentBottom="true">
+
+				<Button
+					style="?android:attr/buttonStyleSmall"
+					android:layout_height="wrap_content"
+					android:text="CONNECT"
+					android:layout_centerHorizontal="true"
+					android:background="@drawable/clear_button"
+					android:id="@+id/conButton"
+					android:layout_width="140dp"/>
+
+			</RelativeLayout>
+
+		</RelativeLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+

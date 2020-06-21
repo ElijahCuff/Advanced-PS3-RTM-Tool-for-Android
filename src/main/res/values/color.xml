@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#111111</color>
+    <color name="colorPrimaryDark">#101010</color>
+	<color name="colorAccent">#FFFFFF</color>
+
+	<color name="colorWatch">#FFFFFF</color>
+    <color name="white">#FAFAFA</color>
+	<color name="black">#000000</color>
+    <color name="black_semi_transparent">#B2000000</color>
+
+  
+    <!--swipe down refresh animation color-->
+    <color name="orange">#FF9900</color>
+    <color name="green">#009900</color>
+    <color name="blue">#000099</color>
+    <color name="red">#ff0015</color>
+
+    <!--other-->
+    <color name="background_color">#f2f2f2</color>
+    <color name="divider">#f2f2f2</color>
+    <color name="text_color">#525252</color>
+    <color name="indigo">#EC407A</color>
+    <color name="pink">#E91E63</color>
+    <color name="appBlack">#ff323a45</color>
+    <color name="appBlue">#ff00afd1</color>
+    <color name="sysWhite">#ffffffff</color>
+
+	<!--PopUp Menu-->
+	<color name="popupDefaultItem">#000000</color>
+	<color name="popupText">#ffffffff</color>
+	<color name="popupSelectItem">#393939</color>
+	<color name="popupSelectOutline">#FFFFFF</color>
+	
+</resources>

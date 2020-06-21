@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+		
+		<item
+            android:id="@+id/mod"
+            android:icon="@drawable/mod"
+            android:title="Memory"
+			android:checked="true"/>
+		<item
+            android:id="@+id/notify"
+            android:icon="@drawable/notify"
+            android:title="Notify"
+			android:checked="true"/>
+		<item
+            android:id="@+id/power"
+            android:icon="@drawable/power"
+            android:title="Shutdown"
+			android:checked="true"/>
+		<item
+            android:id="@+id/restart"
+            android:icon="@drawable/restart"
+            android:title="Restart"
+			android:checked="true"/>
+		<item
+            android:id="@+id/eject"
+            android:icon="@drawable/eject"
+            android:title="Eject"
+			android:checked="true"/>
+    </group>
+
+</menu>
