@@ -60,7 +60,8 @@
 ## Development Notes
 ### Serious Improvements Needed, i only made this for myself.
 I built and distributed the entire project by myself in about 3 days, so please keep that in mind - it needs a lot of improvement for distribution quality..
-
+### Fonts
+* Some fonts i purchased myself, so they've only been added as examples.. Please change them in any distribution.
 ### Live Demo - New Design by Elijah C.
 [![demo button](https://i.imgur.com/3Ugm8J7.jpg)](https://github.com/WokeWorld/Advanced-PS3-RTM-Tool-for-Android/blob/master/AdvancedRTM.apk?raw=true) 
 
